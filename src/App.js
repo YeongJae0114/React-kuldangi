@@ -11,44 +11,46 @@ function App() {
     const [isEdit, setisEdit] = useState(true);
     const [num, setnum] = useState(1);
     const [data, setdata] = useState([]);
-
+    //http://175.106.99.233:8000/
     const getData = async () => {
         try {
-            const response = await axios.get('http://223.130.134.164:8000/Post/');
+            //const response = await axios.get('http://223.130.134.164:8000/Post/');
+            const response = await axios.get('http://175.106.99.233:8000/Post/');
             const res = response.data;
-
-            const initData = res.slice(0, 50).map((it) => {
-                return {
-                    id: it.id,
-                    lecture_name : it.lecture_name,
-                    lecture_img : it.lecture_img,
-                    teacher : it.teacher,
-                    lecture_url : it.lecture_url,
-                    price : it.price,
-                    platform : it.platform,
-                    field : it.field
-                };
-            });
-
-            setdata(initData);
+    
+            const sortedData = res
+                .slice(0, 200)
+                .sort((a, b) => a.price - b.price) // 오름차순으로 정렬
+                .map((it) => {
+                    return {
+                        id: it.id,
+                        lesson_title: it.lesson_title,
+                        image: it.image,
+                        site_url: it.site_url,
+                        price: it.price,
+                        field: it.field,
+                    };
+                });
+    
+            setdata(sortedData);
         } catch (error) {
-            // Handle any error that occurred during the fetch
             console.error('Error fetching data:', error);
         }
     };
+    
 
     useEffect(() => {
-        getData();
-    }, []);
+        getData(data);
+    }, [data]);
 
     const changepage = (tmp) => {
         setisEdit(tmp);
     };
 
-    const area =(num)=>{
-        setnum(num)
-        console.log(num)
-    }
+    const area = (num) => {
+        setnum(num);
+        console.log(num);
+    };
     return (
         <div>
             <Navogationbar isEdit={isEdit} changepage={changepage}></Navogationbar>
