@@ -1,7 +1,6 @@
 import './Styles.css';
 
-
-const LectureHeader = ({isEdit, changepage}) => {
+const LectureHeader = ({ isEdit, changepage }) => {
     return (
         <div>
             <header className="py-5">
@@ -9,12 +8,15 @@ const LectureHeader = ({isEdit, changepage}) => {
                     <div className="p-4 p1-lg-5 bg-light rounded-3 text-center">
                         <div className="m-4 m-lg-5">
                             {/* <h1 className="display-5 fw-bold">A warm welcome!</h1> */}
-                            <p className="fs1-4">
-                                최저가 강의를 한번에 확인해보세요!
-                            </p>
-                            <a href='' className="btn btn-primary btn-lg" onClick={()=>{changepage(isEdit=true)}}>
+                            <p className="fs1-4">최저가 강의를 한번에 확인해보세요!</p>
+                            <button
+                                className="btn btn-primary btn-lg"
+                                onClick={() => {
+                                    changepage((isEdit = true));
+                                }}
+                            >
                                 Home
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
