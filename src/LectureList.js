@@ -1,10 +1,10 @@
 import './Styles.css';
 import django from './img/django.jpeg';
-import java from './img/java.png';
+import java from './img/java2.png';
 import spring from './img/spring.png';
 import c from './img/C_image.png';
 import python from './img/python.png';
-import react_img from './img/react.png';
+import react from './img/react.png';
 
 /* eslint-disable */
 // 파일 내용
@@ -48,7 +48,7 @@ const LectureList = ({ isEdit, changepage, area, num }) => {
                     <div className="row gx-lg-5">
                         <a onClick={onclick1} className="col-lg-6 col-xxl-4 mb-5">
                             <div className="card bg-light border-0 h-100">
-                                <img src={django} alt="" />
+                                <img className='img_css' src={django} alt="" />
                                 <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                                     <h2 className="fs-4 fw-bold">Django</h2>
                                     <div className="mb-0">
@@ -64,7 +64,7 @@ const LectureList = ({ isEdit, changepage, area, num }) => {
                         <a onClick={onclick2} className="col-lg-6 col-xxl-4 mb-5">
                             <div>
                                 <div className="card bg-light border-0 h-100">
-                                    <img src={react_img} alt="" />
+                                    <img className='img_css' src={react} alt="" />
                                     <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                                         <h2 className="fs-4 fw-bold">React</h2>
                                         <div className="mb-0">
@@ -79,7 +79,7 @@ const LectureList = ({ isEdit, changepage, area, num }) => {
                         </a>
                         <a onClick={onclick3} className="col-lg-6 col-xxl-4 mb-5">
                             <div className="card bg-light border-0 h-100">
-                                <img src={spring} alt="" />
+                                <img className='img_css' src={spring} alt="" />
                                 <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                                     <h2 className="fs-4 fw-bold">Spring</h2>
                                     <div className="mb-0">
@@ -93,7 +93,7 @@ const LectureList = ({ isEdit, changepage, area, num }) => {
                         </a>
                         <a onClick={onclick4} className="col-lg-6 col-xxl-4 mb-5">
                             <div className="card bg-light border-0 h-100">
-                                <img src={c} alt="" />
+                                <img className='img_css' src={c} alt="" />
                                 <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                                     <h2 className="fs-4 fw-bold">C programming language</h2>
                                     <p className="mb-0">
@@ -108,7 +108,7 @@ const LectureList = ({ isEdit, changepage, area, num }) => {
                         </a>
                         <a onClick={onclick5} className="col-lg-6 col-xxl-4 mb-5">
                             <div className="card bg-light border-0 h-100">
-                                <img src={python} alt="" />
+                                <img className='img_css' src={python} alt="" />
                                 <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                                     <h2 className="fs-4 fw-bold">Python</h2>
                                     <p className="mb-0">
@@ -123,7 +123,7 @@ const LectureList = ({ isEdit, changepage, area, num }) => {
                         </a>
                         <a onClick={onclick6} className="col-lg-6 col-xxl-4 mb-5">
                             <div className="card bg-light border-0 h-100">
-                                <img src={java} alt="" />
+                                <img className='img_css' src={java} alt="" />
                                 <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                                     <h2 className="fs-4 fw-bold">Java</h2>
                                     <p className="mb-0 fw-bold">
