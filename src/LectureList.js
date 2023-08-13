@@ -126,12 +126,11 @@ const LectureList = ({ isEdit, changepage, area, num }) => {
                                 <img src={java} alt="" />
                                 <div className="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                                     <h2 className="fs-4 fw-bold">Java</h2>
-                                    <p className="mb-0">
-                                        <p className="fw-bold">
-                                            {' '}
-                                            가장 많이 사용하는 <br />
-                                            객체지향 프로그래밍 언어
-                                        </p>
+                                    <p className="mb-0 fw-bold">
+                                        가장 많이 사용하는 <br />
+                                        객체지향 프로그래밍 언어
+                                    </p>
+                                    <p><br />
                                         사용 분야 : 웹 개발, 데이터베이스 처리, 빅 데이터 및 분산 처리, 시스템
                                         프로그래밍
                                     </p>
