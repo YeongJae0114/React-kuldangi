@@ -89,9 +89,12 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.img_css{
+
+.list-card{
+    height: 100%;
+    left: 0;
+    top: 0;
     width: 100%;
-    border : 3px solid rgb(185, 183, 183)
 }
 
 .logo-img {
@@ -7845,8 +7848,7 @@ fieldset:disabled .btn {
 }
 
 .mb-0 {
-   
-    margin-top: 20px;
+    
     margin-bottom: 0 !important;
 }
 
