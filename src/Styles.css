@@ -91,6 +91,7 @@ body {
 }
 
 .list-card{
+    border: solid 1px rgb(225, 220, 220);
     height: 100%;
     left: 0;
     top: 0;
