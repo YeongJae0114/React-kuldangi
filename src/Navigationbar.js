@@ -35,14 +35,12 @@ const Navogationbar = ({ isEdit, changepage }) => {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#!">
-                                About
+                            <a className="nav-link active" href="https://shocking-leather-c84.notion.site/about-88ceb43d2ba044b2b74bddaba416e6aa?pvs=4">
+                                About us
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#!">
-                                Contact
-                            </a>
+                            
                         </li>
                     </ul>
                 </div>
